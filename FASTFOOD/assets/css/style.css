@@ -1,0 +1,139 @@
+/* 
+Developer by: francisco garcia
+License: wizzle.work
+description: all style for document, template with wizzle css
+*/
+:root {
+  --color_1: #fec606;
+  --color_2: #fff;
+  --color_3: #333;
+  --color_4: #000;
+}
+
+/* TYPOGRAPHY */
+.fast-food-text-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.fast-food-text-comfortaa {
+  font-family: 'Comfortaa', cursive;
+}
+
+/* ALL STYLE */
+.fast-food-menu {
+  width: 300px;
+  height: 100vh;
+  background: var(--color_1);
+}
+
+.fast-food-menu ul {
+  list-style: none;
+}
+
+.fast-food-menu ul li a:hover {
+  background: var(--color_3);
+  color: var(--color_2) !important;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 25px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-twitter,
+.fa-instagram,
+.fa-facebook,
+.fa-youtube,
+.fa-bars {
+  background: var(--color_1);
+  color: var(--color_4);
+  border-radius: 5px;
+}
+.fa-bars{
+  margin: 0px 2px;
+}
+
+.fast-food-image-height{
+  height: 500px;
+}
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-facebook:hover,
+.fa-youtube:hover,
+.fa-times {
+  background: var(--color_3);
+  color: var(--color_2);
+}
+
+#fast_food_bars {
+  transition: all 1s ease-in-out;
+}
+
+.fast-food-menu-animation {
+  transition: all 1s ease-in-out;
+  left: -300px;
+}
+
+#fast_food_menu_bars:checked~#fast_food_bars::before {
+  content: 'x';
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+
+#fast_food_menu_bars:checked~#fast_food_bars {
+  background: var(--color_3);
+  width: 300px;
+  color: var(--color_2);
+}
+
+#fast_food_menu_bars:checked ~ .fast-food-menu-animation {
+  left: 0px;
+}
+
+.fast-food-useful-links li {
+  list-style: none;
+}
+
+.fast-food-useful-links li a {
+  display: block;
+}
+
+.fast-food-useful-links li a:hover {
+  background: var(--color_3);
+}
+
+.fast-food-useful-links li a:hover * {
+  color: var(--color_2) !important;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 300px){
+  .fast-food-image-height{
+    height: 300px;
+  }
+  div.wizzle-padding img.wizzle-width-medium{
+    width: 100% !important;
+  }
+.fa-twitter,
+.fa-instagram,
+.fa-facebook,
+.fa-youtube{
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 481px){}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+  .fast-food-image-height{
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 992px){}
+@media only screen and (max-width: 1200px) and (min-width: 1025px){}
+@media only screen and (max-width: 1279px) and (min-width: 1201px){}
+@media only screen and (max-width: 1919px) and (min-width: 1280px){}
+@media only screen and (min-width: 1920px){}
